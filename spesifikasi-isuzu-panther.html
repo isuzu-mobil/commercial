@@ -240,9 +240,9 @@
         
         <div class="card card-outline-secondary my-4">
           <div class="card-header">
-            <button data-toggle="collapse" data-target="#1">Spesifikasi Panther LM Smart</button>
+            <button onclick="myFunction()">Spesifikasi Panther LM Smart</button>
           </div>
-          <div id="1" class="card-body collapse">
+          <div id="myDIV" class="card-body collapse">
             <table style="width:100%">
               <tr>
                 <th>Dimensi</th>
@@ -515,7 +515,7 @@
 
         <div class="card card-outline-secondary my-4">
           <div class="card-header">
-            <button onclick="myFunction()">Spesifikasi Panther LV</button>
+            <button onclick="myFunction2()">Spesifikasi Panther LV</button>
           </div>
           <div id="myDIV2" class="card-body">
             <table style="width:100%">
@@ -820,7 +820,7 @@ function myFunction() {
 </script>
 
 <script>
-function myFunction() {
+function myFunction2() {
   var x = document.getElementById("myDIV2");
   if (x.style.display === "none") {
     x.style.display = "block";
