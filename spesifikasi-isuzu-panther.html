@@ -23,6 +23,13 @@
 }
 </style>
   
+  <style>
+#myDIV2 {
+  width: 100%;
+  margin: 2px;
+}
+</style>
+  
 </head>
 
 <body>
@@ -510,7 +517,7 @@
           <div class="card-header">
             <button onclick="myFunction()">Spesifikasi Panther LV</button>
           </div>
-          <div id="myDIV" class="card-body">
+          <div id="myDIV2" class="card-body">
             <table style="width:100%">
               <tr>
                 <th>Dimensi</th>
@@ -804,6 +811,17 @@
 <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV2");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
